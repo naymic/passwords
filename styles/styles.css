@@ -1,0 +1,126 @@
+@CHARSET "UTF-8";
+
+@media screen and (min-width: 0px) AND (max-width: 992px) {
+	body {
+   	  width:100%;	
+	}
+	
+	.header {
+		display: none;
+	}
+	
+	.login{
+		width: 100%;
+	}
+
+
+	
+
+	
+}
+
+@media screen and (min-width: 993px) {
+	body {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 992px;
+	}
+	.header {
+		max-width: 992px;
+		height: 100px;
+		background-repeat: no-repeat;
+	}
+	
+	.login{
+		max-width: 250px;
+	}
+	
+}
+
+
+
+body{
+
+	background-color: grey;
+	word-wrap: break-word;
+	width: 100%;
+}
+
+td,th{
+	padding:2px;
+	
+}
+
+
+
+.menu{
+	min-height: 20px;
+	background-color: blue;
+}
+
+.content{
+	background-color: white;
+	padding:5px;
+}
+
+
+.border{
+	border:2px solid black;
+}
+
+h1{
+	
+}
+
+h2{
+	
+}
+
+h3{
+	margin-top:0px;
+}
+
+.main_content{
+		padding-right:9px;
+	}
+
+/*************************/ 
+/*Login Template */
+/*************************/
+
+.login{
+	
+	margin-left:auto;
+	margin-right:auto;
+
+}
+
+.formLogin{
+	padding: 15px;
+}
+
+.formInput{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	
+}
+
+
+
+
+
+/*************************/ 
+/*Login Template */
+/*************************/
+
+
+.left{
+	float:left;
+}
+
+.table_header{
+	
+	
+	margin-top: 2px;
+	margin-bottom: 2px;
+}

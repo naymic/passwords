@@ -1,0 +1,8 @@
+<tr>
+	<td>{{USERNAME}}</td>
+	<td>{{PASSWORD}}</td>
+	<td>{{DESCRIPTION}}</td>
+	<td><a href="{{LINK}}" target="blank">Link</a></td>
+	<td><a href="index.php?page=main&ac=update&class=stLogin&id={{OID}}&limit={{LIMIT}}&filter={{FILTER}}">up</a></td>
+	<td  ><a onClick="return confirm('Are you sure you want to delete row: \n {{USERNAME}} \n {{PASSWORD}} \n {{DESCRIPTION}} \n {{LINK}} ?')" style="color:red;" href="index.php?page=main&ac=delete&class=stLogin&id={{OID}}&&limit={{LIMIT}}&filter={{FILTER}}">del</a></td>
+</tr>

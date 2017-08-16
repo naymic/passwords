@@ -1,0 +1,70 @@
+<div class="main_content">
+<div style="float:right;"><a href="index.php?ac=logout">Logout</a></div>
+	<h3>Table of Logins from {{USERNAME}}</h3>
+	
+	
+	<div class="col-md-6 col-xs-12" >
+		<form action="index.php" method="GET">
+			<input type="text" class="col-xs-6" name="filter">
+			<input type="submit" class="col-xs-3" value="Search">
+			<button  class="col-xs-3" href="index.php">Reset</button>
+		</form>
+		
+	
+	</div>
+	
+	<div>
+		<table  class="table-striped col-xs-12">
+		<thead>
+			<tr>
+				<th>Username</th>
+				<th>Password</th>
+				<th>Description</th>
+				<th>Link</th>
+				<th></th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+			{{ROWS}}		
+		</tbody>
+		
+		</table>
+	</div>
+	<div style="margin-top:-15px; clear:both">
+	{{PAGE_CONTROL}}
+	</div>
+	
+	<br>
+	
+	<h4>New and Update</h4>
+	<form method="post" action="index.php?page=main&ac=save&class=stLogin">
+		 <input class="col-sm-12" type="hidden" id="form_id" name="id" value="{{FORM_ID}}">
+		 <input class="col-sm-12" type="hidden" id="form_userid" name="userId" value="{{FORM_USERID}}">
+					
+		<div class="row">
+
+			<div class="col-sm-2">
+				Username: <br> <input class="col-sm-12 form-control" type="text" name="username" id="form_username"
+					value="{{FORM_USERNAME}}">
+			</div>
+			<div class="col-sm-2">
+				Password: <br> <input class="col-sm-12 form-control"  type="text" name="password" id="form_password"
+					value="{{FORM_PASSWORD}}">
+			</div>
+			<div class="col-sm-4">
+				Description: <br> <input class="col-sm-12 form-control" type="text" name="description" id="form_description"
+					value="{{FORM_DESCRIPTION}}">
+			</div>
+			<div class="col-sm-4">
+				LINK: <br> <input class="col-sm-12 form-control" type="text" name="link" id="form_link"
+					value="{{FORM_LINK}}">
+			</div>
+		</div>
+		<div style="margin-top:5px;">
+		<input type="submit" value="Submit">&nbsp;<button href="index.php">Reset</button>
+		</div>
+	</form>
+
+
+</div>
